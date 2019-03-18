@@ -7,17 +7,39 @@ namespace Odev_1
 {
     abstract class Asker
     {
-        private Bolge koordinat;
-        public Bolge Koordinat { get { return koordinat; } }
+        public int[] Koordinat = new int[2];
 
-        // ..... //
+        private Takim takım;
 
-        //Abstract sınıfların implementasyonları çoçuk sınıflarda gerçekleştirilmelidir.
-        public abstract void HaraketEt();
+        private bool canlı;
 
-        public abstract void Bekle();
+        private int saglık;
 
-        // ..... //
+        
+
+        public Asker(bool canlı,Takim takım,int saglık,int[] koordinat)
+        {
+            Canlı = canlı;
+            Saglık = saglık;
+            Koordinat = koordinat;
+           
+        }
+
+
+        public bool Canlı { get { return canlı; } set { canlı = value; } }
+
+        public Takim Takım { get { return takım; }  }
+
+        public int Saglık { get { return saglık; } set { saglık = value; } }
+
+
+        public abstract int[] HaraketEt(int[] x);
+        
+        public abstract int Bekle();
+
+        public abstract int Ateş_et();
+
+
 
     }
 }

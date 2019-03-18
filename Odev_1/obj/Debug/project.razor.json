@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\Cagatay\\Documents\\GitHub\\odev-1-CagatayDeu\\Odev_1\\Odev_1.csproj",
+  "TargetFramework": "v4.0",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
